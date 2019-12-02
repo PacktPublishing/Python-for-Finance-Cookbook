@@ -3,6 +3,7 @@ import backtrader as bt
 import datetime
 import pandas as pd
 import matplotlib.pyplot as plt
+from chapter_2_utils import MyBuySell
 
 # create a Stratey
 class BBand_Strategy(bt.Strategy):
@@ -86,7 +87,7 @@ cerebro.addstrategy(BBand_Strategy)
 cerebro.adddata(data)
 cerebro.broker.setcash(10000.0)
 cerebro.broker.setcommission(commission=0.001)
-cerebro.addobserver(bt.observers.BuySell)
+cerebro.addobserver(MyBuySell)
 cerebro.addobserver(bt.observers.Value)
 cerebro.addanalyzer(bt.analyzers.Returns, _name='returns')
 cerebro.addanalyzer(bt.analyzers.TimeReturn, _name='time_return')

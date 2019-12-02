@@ -1,5 +1,6 @@
 from datetime import datetime
 import backtrader as bt
+from chapter_2_utils import MyBuySell
 
 # create a Stratey
 class RsiSignalStrategy(bt.SignalStrategy):
@@ -38,7 +39,7 @@ cerebro.addstrategy(RsiSignalStrategy)
 cerebro.adddata(data)
 cerebro.broker.setcash(1000.0)
 cerebro.broker.setcommission(commission=0.001)
-cerebro.addobserver(bt.observers.BuySell)
+cerebro.addobserver(MyBuySell)
 cerebro.addobserver(bt.observers.Value)
 cerebro.run()
 

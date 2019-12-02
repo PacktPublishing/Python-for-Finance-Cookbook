@@ -1,5 +1,6 @@
 from datetime import datetime
 import backtrader as bt
+from chapter_2_utils import MyBuySell
 
 # Create a Strategy
 class SmaStrategy(bt.Strategy):
@@ -78,7 +79,7 @@ cerebro = bt.Cerebro(stdstats = False)
 cerebro.adddata(data)
 cerebro.broker.setcash(1000.0)
 cerebro.addstrategy(SmaStrategy)
-cerebro.addobserver(bt.observers.BuySell)
+cerebro.addobserver(MyBuySell)
 cerebro.addobserver(bt.observers.Value)
 
 # run backtest

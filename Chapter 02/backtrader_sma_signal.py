@@ -1,5 +1,6 @@
 from datetime import datetime
 import backtrader as bt
+from chapter_2_utils import MyBuySell
 
 # create the strategy using a signal
 class SmaSignal(bt.Signal):
@@ -20,7 +21,7 @@ cerebro = bt.Cerebro(stdstats = False)
 cerebro.adddata(data)
 cerebro.broker.setcash(1000.0)
 cerebro.add_signal(bt.SIGNAL_LONG, SmaSignal)
-cerebro.addobserver(bt.observers.BuySell)
+cerebro.addobserver(MyBuySell)
 cerebro.addobserver(bt.observers.Value)
 
 # run backtest
