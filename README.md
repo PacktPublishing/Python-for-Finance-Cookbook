@@ -1,9 +1,9 @@
 ## Python For Finance Cookbook - Code Repository
 
 **Python For Finance Cookbook**  
-published: January xxth, 2020
+published: January 31st, 2020
 
-Paperback: XXX pages  
+Paperback: 432 pages  
 Publisher: Packt Publishing  
 Language: English
 
@@ -35,7 +35,7 @@ Eryk Lewinson. *Python For Finance Cookbook*. Packt Publishing, 2020.
     address = {Birmingham, UK},  
     author = {Lewinson, Eryk},  
     edition = {1},  
-    isbn = {xxx},   
+    isbn = {9781789618518},   
     publisher = {Packt Publishing},  
     title = {{Python For Finance Cookbook}},  
     year = {2020}  
