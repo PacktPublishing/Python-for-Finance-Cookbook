@@ -11,7 +11,7 @@ Language: English
 
 ## Links
 
-- [Amazon Page]()
+- [Amazon Page](https://www.amazon.com/Python-Finance-Cookbook-libraries-financial-dp-1789618517/dp/1789618517)
 - [Packt Page](https://www.packtpub.com/data/python-for-finance-cookbook)
 
 ## Table of Contents
